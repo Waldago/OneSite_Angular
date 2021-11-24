@@ -1,0 +1,105 @@
+.titulo {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size:300%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  width: auto;
+  height: auto;
+}
+
+.card-header {
+  border-block-end-color: black;
+  border: solid;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  /* margin-top: 20px; */
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.name {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: white;
+}
+
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 330px;
+  margin-bottom: 20px;
+  background-color: rgba(30, 30, 30, 0.6);
+  color: white;
+  border-radius: 10px;
+}
+
+.card-body {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+a:visited {
+  background-color: red;
+}
+
+a {
+  border-color: black;
+}
+
+button {
+  border-color: black;
+  border: solid;
+  border-style: groove;
+  background-color: dodgerblue;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+.d-flex {
+  margin-bottom: 10%;
+  margin-top: 10px;
+}
+
+.card-title{
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.body{
+   background-image: url(/assets/img/hobbiton.jpg) ;
+   /* Fijar la imagen de fondo este vertical y
+      horizontalmente y centrado */
+  background-position: 60% 10%;
+
+  /* Esta imagen no debe de repetirse */
+  background-repeat: no-repeat;
+
+  /* COn esta regla fijamos la imagen en la pantalla. */
+  background-attachment: fixed;
+
+  /* La imagen ocupa el 100% y se reescala */
+  background-size: cover;
+
+  /* Damos un color de fondo mientras la imagen está cargando  */
+  background-color: #464646;
+  /* primer componente para el eje x y el segundo eje y */
+  padding: 1em 2em;
+}
+.box {
+background-color: rgba(30, 30, 30, 0.4);
+border-radius: 5px;
+line-height: 1;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}

@@ -1,0 +1,66 @@
+<div class="body">
+  <div>
+    <H1 class="titulo">Todos los personajes que <br><br> aparecieron a lo largo de la saga</H1>
+  </div>
+  <form class="d-flex">
+    <input class="form-control" type="text" [formControl]="nombre">
+    <button class="button" (click)="getNombre($event)">Buscar</button>
+    <button class="button" (click)="resetNombre($event)">Todos</button>
+  </form>
+  <div class="box">
+    <div class="flex-list" *ngIf="!personaje">
+      <div class="card text-center" *ngFor="let personaje of Personajes">
+        <div class="card-header">
+          <h1 class="name">{{personaje.name}}</h1>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{personaje.race}}</h5>
+          <div class="card-text">
+            <p>
+              {{personaje.gender}}
+            </p>
+            <div *ngIf="personaje.death">
+              <p>
+                Su muerte fue: {{personaje.death}}
+              </p>
+            </div>
+            <div id="google_translate_element" *ngIf="personaje.spouse">
+              <p>
+                Esta casado con: {{personaje.spouse}}
+              </p>
+            </div>
+          </div>
+          <p>Para mas informacion pincha en el boton de abajo</p>
+          <a href={{personaje.wikiUrl}} class="btn btn-primary">wiki</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-list" *ngIf="personaje">
+      <div class="card text-center">
+        <div class="card-header">
+          <h1 class="name">{{personaje.name}}</h1>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{personaje.race}}</h5>
+          <div class="card-text">
+            <p>
+              {{personaje.gender}}
+            </p>
+            <div *ngIf="personaje.death">
+              <p>
+                Su muerte fue {{personaje.death}}
+              </p>
+            </div>
+            <div id="google_translate_element" *ngIf="personaje.spouse">
+              <p>
+                Esta casado con {{personaje.spouse}}
+              </p>
+            </div>
+          </div>
+          <p>Para mas informacion pincha en el boton de abajo</p>
+          <a href={{personaje.wikiUrl}} class="btn btn-primary">wiki</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

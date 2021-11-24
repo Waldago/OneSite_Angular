@@ -1,0 +1,82 @@
+h1 {
+  color: white;
+  border-color: black;
+  border: solid;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  box-shadow: 0px 10px 10px rgb(15, 15, 15);
+}
+
+div {
+  text-align: center;
+}
+
+.contenido {
+  display: flex;
+  /* margin-left: 30%; */
+  flex-wrap: wrap;
+  /* margin: auto;   */
+  justify-content: space-evenly;
+  align-items: flex-start;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.capitulos {
+  border: solid;
+  background-color: darkgoldenrod;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  box-shadow: 0px 10px 10px rgb(230, 225, 225);
+}
+
+li {
+  text-align: left;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.titulo {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+img {
+  height: 700px;
+  width: auto;
+  box-shadow: 0px 10px 10px black;
+}
+
+.body {
+  color: white;
+  font-size: 15px;
+  background-image: url(/assets/img/mapa.jpg);
+  /* Fijar la imagen de fondo este vertical y
+        horizontalmente y centrado */
+  background-position: 60% 10%;
+
+  /* Esta imagen no debe de repetirse */
+  background-repeat: no-repeat;
+
+  /* COn esta regla fijamos la imagen en la pantalla. */
+  background-attachment: fixed;
+
+  /* La imagen ocupa el 100% y se reescala */
+  background-size: cover;
+
+  /* Damos un color de fondo mientras la imagen está cargando  */
+  background-color: #464646;
+  /* primer componente para el eje x y el segundo eje y */
+  padding: 1em 2em;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.box {
+  background-color: rgba(30, 30, 30, 0.4);
+  border-radius: 5px;
+  font-family: sans-serif;
+  line-height: 1;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-family: 'Alegreya Sans SC', sans-serif;
+}

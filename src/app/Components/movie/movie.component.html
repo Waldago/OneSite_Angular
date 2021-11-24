@@ -1,0 +1,26 @@
+<div class="body">
+  <H1 class="titulo">Peliculas</H1>
+  <div class="principal" *ngFor="let pelicula of peliculas; let i = index">
+    <div class="card text-white bg-primary mb-3">
+      <div class="card-header">{{pelicula.name}}</div>
+      <div class="card-body">
+        <div class="card-text">
+          <div class="d-flex">
+            <p class="atr">Nominaciones de la academia:{{pelicula.academyAwardNominations}}</p>
+            <mat-icon aria-hidden="false" aria-label="grupo">groups</mat-icon>
+            <p class="atr">Premios ganados:{{pelicula.academyAwardWins}}</p>
+            <mat-icon aria-hidden="false" aria-label="medalla">military_tech</mat-icon>
+            <p class="atr">Ingresos de taquilla en millones:{{pelicula.boxOfficeRevenueInMillions}}</p>
+            <mat-icon aria-hidden="false" aria-label="moneda">paid</mat-icon>
+            <p class="atr">Presupuesto en millones:{{pelicula.budgetInMillions}}</p>
+            <mat-icon aria-hidden="false" aria-label="moneda">paid</mat-icon>
+            <p class="atr">Calificacion en Rotten Tomatoes:{{pelicula.rottenTomatoesScore}}</p>
+            <mat-icon aria-hidden="false" aria-label="dedo arriba">thumb_up_alt</mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-videoyoutube [id]="dir[i]"></app-videoyoutube>
+  </div>
+</div>
+

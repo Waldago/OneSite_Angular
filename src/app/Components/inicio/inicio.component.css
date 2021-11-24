@@ -1,0 +1,37 @@
+.body {
+  color: white;
+  background-image: url(/assets/img/ring.jpg);
+  /* Fijar la imagen de fondo este vertical y
+        horizontalmente y centrado */
+  background-position: center center;
+
+  /* Esta imagen no debe de repetirse */
+  background-repeat: no-repeat;
+
+  /* COn esta regla fijamos la imagen en la pantalla. */
+  background-attachment: fixed;
+
+  /* La imagen ocupa el 100% y se reescala */
+  background-size: cover;
+
+  /* Damos un color de fondo mientras la imagen está cargando  */
+  background-color: #464646;
+  /* primer componente para el eje x y el segundo eje y */
+  padding: 1em 2em;
+}
+
+.titulo {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  backdrop-filter: opacity(20%);
+}
+
+.box {
+  background-color: rgba(30, 30, 30, 0.4);
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-family: 'Alegreya Sans SC', sans-serif;
+}

@@ -1,0 +1,41 @@
+<div class="body">
+  <H1>Libros</H1>
+  <div class="box">
+    <div *ngFor="let libro of libros; let i = index">
+      <h1 class="titulo">{{libro.name}}</h1>
+      <div class="contenido">
+        <img [src]="bir[i]" alt="">
+        <div class="capitulos" *ngIf="i == 0">
+          <h3 class="titulo">Capitulos</h3>
+          <div *ngFor="let capitulo of capitu1">
+            <Ul>
+              <li>
+                {{capitulo.chapterName}}
+              </li>
+            </Ul>
+          </div>
+        </div>
+        <div class="capitulos" *ngIf="i == 1">
+          <h3 class="titulo">Capitulos</h3>
+          <div *ngFor="let capitulo of capitu2">
+            <Ul>
+              <li>
+                {{capitulo.chapterName}}
+              </li>
+            </Ul>
+          </div>
+        </div>
+        <div class="capitulos" *ngIf="i == 2">
+          <h3 class="titulo">Capitulos</h3>
+          <div *ngFor="let capitulo of capitu3">
+            <Ul>
+              <li>
+                {{capitulo.chapterName}}
+              </li>
+            </Ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
